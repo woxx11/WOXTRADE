@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+.auth-input {
+  @apply w-full px-4 py-3 rounded-xl border border-zinc-300 focus:ring-2 focus:ring-emerald-400 outline-none transition;
+}
+
+.auth-btn {
+  @apply w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-semibold transition;
+}
+
+.auth-text {
+  @apply text-sm text-zinc-500 text-center mt-6;
+}
+
+.auth-text a {
+  @apply text-emerald-500 font-medium hover:underline;
+}
